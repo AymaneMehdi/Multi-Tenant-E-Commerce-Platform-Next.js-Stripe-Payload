@@ -22,10 +22,9 @@ interface NavbarItemProps {
 const NavbarItem = ({ href, children, isActive }: NavbarItemProps) => {
   return (
     <Button
-      variant="outline"
       className={cn(
-        "bg-transparent hover:bg-transparent rounded-full hover:border-primary border-transparent px-3.5 text-lg",
-        isActive && "bg-black text-white hover:bg-black hover:text-white",
+        "bg-[#FF6678] rounded-full border-transparent px-3.5 text-lg hover:bg-black hover:text-white",
+        isActive && "bg-[#f3273f] text-white hover:bg-black hover:text-white",
       )}
     >
       <Link href={href}>{children}</Link>
@@ -85,28 +84,21 @@ export default function Navbar() {
         ))}
       </div>
       <div className="hidden lg:flex">
-        <Button
-          asChild
-          variant="outline"
-          className="border-l border-t-0 border-r-0 border-b-0 px-12 h-full rounded-none bg-white hover:bg-pink-400 transition-colors text-lg"
-        >
+        <button className="border-l border-t-0 border-r-0 border-b-0 px-12 h-full rounded-none bg-white hover:bg-[#FF6678] transition-colors text-lg">
           <Link href="/sign-in">Log in</Link>
-        </Button>
-        <Button
-          asChild
-          className="border-l border-t-0 border-r-0 border-b-0 px-12 h-full rounded-none bg-black text-white hover:bg-pink-400 hover:text-black transition-colors text-lg"
-        >
+        </button>
+        <button className="border-t-0 border-r-0 border-b-0 px-12 h-full rounded-none bg-black text-white hover:bg-[#FF6678] hover:text-black transition-colors text-lg">
           <Link href="/sign-up">Start Selling</Link>
-        </Button>
+        </button>
       </div>
 
-      <div className="flex lg:hidden items-center justify-center">
+      <div className="flex lg:hidden items-center justify-center pr-4">
         <Button
-          variant="ghost"
-          className="size-12 border-transparent bg-white"
+          variant="default"
+          className="size-10 sm:size-11 border-transparent bg-[#FF6678] hover:bg-[#FF6678]"
           onClick={() => setIsSidebarOpen(true)}
         >
-          <MenuIcon />
+          <MenuIcon className="size-5 sm:size-6" />
         </Button>
       </div>
     </nav>
