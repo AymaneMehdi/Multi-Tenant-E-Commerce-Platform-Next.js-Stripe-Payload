@@ -23,8 +23,8 @@ const NavbarItem = ({ href, children, isActive }: NavbarItemProps) => {
   return (
     <Button
       className={cn(
-        "bg-[#FF6678] rounded-full border-transparent px-3.5 text-lg hover:bg-black hover:text-white",
-        isActive && "bg-[#f3273f] text-white hover:bg-black hover:text-white",
+        "px-3.5 text-lg bg-white border hover:bg-black hover:text-white",
+        isActive && "bg-[#FF6678] text-black hover:bg-black hover:text-white",
       )}
     >
       <Link href={href}>{children}</Link>
