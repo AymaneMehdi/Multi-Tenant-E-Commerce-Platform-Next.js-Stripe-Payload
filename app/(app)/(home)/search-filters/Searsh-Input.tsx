@@ -16,11 +16,11 @@ export const SearchInput = ({ disabled }: Props) => {
     <div className="flex items-center gap-2 w-full">
       {/* Relative positioned container for icon and input alignment */}
       <div className="relative w-full">
-        {/* Search icon - positioned absolutely inside the input */}
-        <SearchIcon className="absolute left-3 top-1/2 -transform-y-1/2 size-4 text-neutral-500" />
+        {/* Search icon - positioned absolutely inside the input, centered vertically */}
+        <SearchIcon className="absolute left-3 top-1/2 -translate-y-1/2 size-5 text-neutral-500 pointer-events-none" />
         {/* Input field for product search */}
         <Input
-          className="p-8" // Padding to accommodate the icon on the left
+          className="pl-10 py-2 pr-4" // Padding: left for icon, right and vertical padding for balance
           placeholder="Search for products ..." // Placeholder text shown when input is empty
           disabled={disabled} // Disable input if the disabled prop is true
         />

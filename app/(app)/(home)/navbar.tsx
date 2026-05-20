@@ -42,7 +42,7 @@ const NavbarItem = ({ href, children, isActive }: NavbarItemProps) => {
         // Base styles: padding, text size, white background with border, hover effect
         "px-3.5 text-lg bg-white border hover:bg-black hover:text-white",
         // If active, use pink background instead of white
-        isActive && "bg-[#FF6678] text-black hover:bg-black hover:text-white",
+        isActive && "bg-[#FF6678] text-white hover:bg-black hover:text-white",
       )}
     >
       <Link href={href}>{children}</Link>
