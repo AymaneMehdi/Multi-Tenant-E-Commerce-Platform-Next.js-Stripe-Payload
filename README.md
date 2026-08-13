@@ -1,3 +1,5 @@
+
+
 # Multi-Tenant E-Commerce Platform
 
 A modern, full-featured **multi-tenant e-commerce platform** built with **Next.js 15**, **Payload CMS**, **TRPC**, and **Stripe**. Perfect for launching a scalable SaaS marketplace with comprehensive admin capabilities and customer-facing storefront.
@@ -128,7 +130,7 @@ media/                            # Media files
 
    ```bash
    git clone https://github.com/AymaneMehdi/Multi-Tenant-E-Commerce-Platform-Next.js-Stripe-Payload
-   cd Multi-Tenant-E-Commerce-Platform-Next
+   cd Multi-Tenant-E-Commerce-Platform-Next.js-Stripe-Payload
    ```
 
 2. **Install dependencies**
